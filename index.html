@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Martin Koome - AI Engineer & Researcher specializing in Probabilistic Graphical Models and Applied Machine Learning at Carnegie Mellon University. Building scalable AI solutions for real-world impact.">
+    <meta name="keywords" content="Martin Koome, AI Engineer, Machine Learning, Deep Learning, Carnegie Mellon University, Data Science, Probabilistic Graphical Models, RAG Systems, AI Research, MLOps, Python, PyTorch">
+    <meta name="author" content="Martin Koome">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Martin Koome - AI Engineer & Researcher">
+    <meta property="og:description" content="Specializing in Probabilistic Graphical Models and Applied Machine Learning. Building scalable AI solutions that solve real-world problems.">
+    <meta property="og:image" content="assets/images/hero-bg.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Martin Koome - AI Engineer & Researcher">
+    <meta name="twitter:description" content="Specializing in Probabilistic Graphical Models and Applied Machine Learning at Carnegie Mellon University.">
+    <meta name="twitter:image" content="assets/images/hero-bg.jpg">
+    
+    <title>Martin Koome - AI Engineer & Researcher | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="header" class="header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">MK</span>
+                <span class="logo-pulse"></span>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <img src="assets/images/hero-bg.jpg" alt="AI Background" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">
+                    <span class="name-text gradient-text animate-fade-in">Martin Koome</span>
+                </h1>
+                <p class="hero-tagline animate-fade-in-delay-1">
+                    AI Engineer & Researcher
+                </p>
+                <p class="hero-description animate-fade-in-delay-2">
+                    Specializing in <span class="highlight-blue">Probabilistic Graphical Models</span> and 
+                    <span class="highlight-purple">Applied Machine Learning</span> at Carnegie Mellon University. 
+                    Building scalable AI solutions that solve real-world problems and deliver measurable impact.
+                </p>
+                
+                <!-- Social Links -->
+                <div class="hero-social animate-fade-in-delay-3">
+                    <a href="https://www.linkedin.com/in/martin-koome" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:mkoome@andrew.cmu.edu" class="social-link" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- CTAs -->
+                <div class="hero-ctas animate-fade-in-delay-4">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="assets/Martin_Koome_CV.pdf" download class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-accent">
+                        Get In Touch
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section">
+        <div class="about-background">
+            <img src="assets/images/about-bg.jpg" alt="About Background" class="section-bg-img">
+            <div class="section-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    About <span class="gradient-text-blue">Me</span>
+                </h2>
+                <p class="section-subtitle">
+                    Passionate about creating scalable AI solutions that deliver organizational and societal value
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-left">
+                    <h3 class="about-heading">Professional Summary</h3>
+                    <p class="about-text">
+                        I am a <span class="text-highlight-blue">Master's student in Engineering Artificial Intelligence</span> at 
+                        <span class="text-highlight-purple">Carnegie Mellon University Africa</span>, specializing in Probabilistic Graphical Models, 
+                        Machine Learning, and Deep Learning.
+                    </p>
+                    <p class="about-text">
+                        I build and deploy AI systems, develop cloud-ready applications with Docker, and automate workflows to improve operational efficiency. 
+                        My work focuses on creating solutions that bridge the gap between cutting-edge AI research and practical, deployable applications.
+                    </p>
+                    <p class="about-text">
+                        Currently leading <span class="text-highlight-teal">Campus Link</span>, incubated at the Industry Innovation Lab, 
+                        which streamlines student services at CMU Africa. Previously contributed to a STEM student dropout study in Kenya that produced 
+                        data-driven insights and actionable recommendations.
+                    </p>
+                </div>
+                
+                <div class="about-right">
+                    <h3 class="about-heading">Core Domains & Expertise</h3>
+                    <div class="expertise-cards">
+                        <div class="expertise-card card-hover">
+                            <h4 class="expertise-title">Machine Learning & Deep Learning</h4>
+                            <p class="expertise-text">PyTorch, Transformers, Probabilistic Graphical Models, LLMs, RAG systems</p>
+                        </div>
+                        <div class="expertise-card card-hover">
+                            <h4 class="expertise-title">Data Science & Analytics</h4>
+                            <p class="expertise-text">Survival Analysis, Statistical Modeling, Time Series, Data Engineering</p>
+                        </div>
+                        <div class="expertise-card card-hover">
+                            <h4 class="expertise-title">MLOps & Engineering</h4>
+                            <p class="expertise-text">Docker, Git, Cloud deployment, System automation, API development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Highlights -->
+            <div class="highlights-grid">
+                <div class="highlight-card card-hover">
+                    <div class="highlight-icon icon-brain">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a9 9 0 0 0-9 9v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a9 9 0 0 1 14 0h-3a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a9 9 0 0 0-9-9z"></path>
+                            <path d="M9 10h.01"></path>
+                            <path d="M15 10h.01"></path>
+                        </svg>
+                    </div>
+                    <h4 class="highlight-title">AI Research & Development</h4>
+                    <p class="highlight-text">Designing and implementing retrieval-augmented generation pipelines and probabilistic graphical models for real-world applications.</p>
+                </div>
+                
+                <div class="highlight-card card-hover">
+                    <div class="highlight-icon icon-target">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h4 class="highlight-title">Problem-Solving Focus</h4>
+                    <p class="highlight-text">Led Campus Link at CMU Africa, streamlining student services through AI. Conducted survival analysis study producing actionable insights.</p>
+                </div>
+                
+                <div class="highlight-card card-hover">
+                    <div class="highlight-icon icon-award">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <h4 class="highlight-title">Recognition & Impact</h4>
+                    <p class="highlight-text">Community Spirit Award at CMU, First Class Honors graduate, 7th ranked Kenyan on Zindi with 45+ ML challenges completed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section">
+        <div class="skills-background">
+            <img src="assets/images/skills-graphic.jpg" alt="Skills" class="skills-bg-img">
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Skills & <span class="gradient-text-teal">Technologies</span>
+                </h2>
+                <p class="section-subtitle">
+                    A comprehensive toolkit for building intelligent, scalable AI solutions
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Machine Learning -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a9 9 0 0 0-9 9v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a9 9 0 0 1 14 0h-3a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a9 9 0 0 0-9-9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">Probabilistic Graphical Models</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">LLM Fine-tuning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+                
+                <!-- Programming -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #9333ea 0%, #ec4899 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                
+                <!-- Data Science -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #14b8a6 0%, #10b981 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Data Science</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">pandas</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">lifelines</span>
+                        <span class="skill-tag">Survival Analysis</span>
+                        <span class="skill-tag">Statistical Modeling</span>
+                        <span class="skill-tag">Time Series Analysis</span>
+                    </div>
+                </div>
+                
+                <!-- MLOps & Cloud -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">MLOps & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Cloud Deployment</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Portainer</span>
+                    </div>
+                </div>
+                
+                <!-- Research Tools -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #6366f1 0%, #9333ea 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Research Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kaplan-Meier Estimation</span>
+                        <span class="skill-tag">Cox Proportional Hazards</span>
+                        <span class="skill-tag">Multivariate Analysis</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Pinecone</span>
+                    </div>
+                </div>
+                
+                <!-- Tools & Platforms -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">n8n Automation</span>
+                        <span class="skill-tag">ERPNext</span>
+                        <span class="skill-tag">NPM</span>
+                        <span class="skill-tag">Google Workspace</span>
+                        <span class="skill-tag">Market Research</span>
+                        <span class="skill-tag">Product Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="gradient-text-purple">Projects</span>
+                </h2>
+                <p class="section-subtitle">
+                    Real-world AI solutions delivering measurable impact across education, healthcare, and technology
+                </p>
+            </div>
+            
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Education & <span class="gradient-text-green">Achievements</span>
+                </h2>
+                <p class="section-subtitle">
+                    Academic excellence and professional recognition
+                </p>
+            </div>
+            
+            <!-- Education Timeline -->
+            <div class="education-container">
+                <h3 class="subsection-title">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    Education
+                </h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item card-hover">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h4 class="timeline-degree">Master of Science in Engineering AI</h4>
+                                    <p class="timeline-institution">Carnegie Mellon University Africa</p>
+                                    <p class="timeline-location">Kigali, Rwanda</p>
+                                </div>
+                                <div class="timeline-period">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    August 2025 - May 2027
+                                </div>
+                            </div>
+                            <p class="timeline-details">Concentration: Probabilistic Graphical Models and Applied Machine Learning</p>
+                            <div class="timeline-achievement">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                </svg>
+                                Community Spirit Award for outstanding collaboration and leadership during induction
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item card-hover">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h4 class="timeline-degree">BSc Mathematics and Computer Science (Statistics Major)</h4>
+                                    <p class="timeline-institution">Multimedia University of Kenya</p>
+                                    <p class="timeline-location">Nairobi, Kenya</p>
+                                </div>
+                                <div class="timeline-period">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    September 2021 - May 2025
+                                </div>
+                            </div>
+                            <p class="timeline-gpa">First Class Honors</p>
+                            <p class="timeline-details">Coursework: Measure and Probability, Operations Research, Time Series Analysis, Stochastic Processes, Survival Analysis</p>
+                            <div class="timeline-achievement">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                </svg>
+                                Elected as delegate in final year
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievements Grid -->
+            <div class="achievements-container">
+                <h3 class="subsection-title">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    Key Achievements
+                </h3>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card card-hover">
+                        <div class="achievement-icon icon-award-gold">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h4 class="achievement-title">Community Spirit Award</h4>
+                        <p class="achievement-org">Carnegie Mellon University Africa</p>
+                        <p class="achievement-desc">Outstanding collaboration and leadership during induction</p>
+                    </div>
+                    
+                    <div class="achievement-card card-hover">
+                        <div class="achievement-icon icon-award-gold">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h4 class="achievement-title">7th Ranked Kenyan on Zindi</h4>
+                        <p class="achievement-org">Zindi Africa</p>
+                        <p class="achievement-desc">Largest platform for data scientists and AI builders in Africa with 45+ challenges completed</p>
+                    </div>
+                    
+                    <div class="achievement-card card-hover">
+                        <div class="achievement-icon icon-award-gold">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <h4 class="achievement-title">First Class Honors</h4>
+                        <p class="achievement-org">Multimedia University of Kenya</p>
+                        <p class="achievement-desc">Graduated with distinction in Mathematics and Computer Science</p>
+                    </div>
+                    
+                    <div class="achievement-card card-hover">
+                        <div class="achievement-icon icon-award-gold">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h4 class="achievement-title">Data Science Co-Lead</h4>
+                        <p class="achievement-org">MMU Tech Community</p>
+                        <p class="achievement-desc">Mentored 50+ students for over two years in data science track</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get In <span class="gradient-text-blue">Touch</span>
+                </h2>
+                <p class="section-subtitle">
+                    Have a project in mind or want to collaborate? Let's connect and create something impactful together.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 class="contact-heading">Contact Information</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon icon-email">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:mkoome@andrew.cmu.edu" class="contact-link">mkoome@andrew.cmu.edu</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon icon-linkedin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/martin-koome" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/martin-koome</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Collaboration Info -->
+                    <div class="collaboration-box">
+                        <h4 class="collab-title">Let's Collaborate</h4>
+                        <p class="collab-text">
+                            I'm always interested in new opportunities, innovative projects, and collaborations in AI, machine learning, and data science. 
+                            Whether you have a project idea, research opportunity, or just want to connect, feel free to reach out.
+                        </p>
+                        <p class="collab-focus">
+                            <span class="focus-label">Current Focus:</span> Probabilistic Graphical Models, Applied ML, RAG Systems, AI for Social Impact
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <div class="input-wrapper">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <div class="input-wrapper">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <div class="input-wrapper">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit btn btn-primary">
+                            <span class="submit-text">Send Message</span>
+                            <span class="submit-loading" style="display: none;">
+                                <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="2" x2="12" y2="6"></line>
+                                    <line x1="12" y1="18" x2="12" y2="22"></line>
+                                    <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                                    <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                                    <line x1="2" y1="12" x2="6" y2="12"></line>
+                                    <line x1="18" y1="12" x2="22" y2="12"></line>
+                                    <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                                    <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                                </svg>
+                                Sending...
+                            </span>
+                            <svg class="submit-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                        
+                        <!-- Status Messages -->
+                        <div id="form-success" class="form-message success-message" style="display: none;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <p>Message sent successfully! I'll get back to you soon.</p>
+                        </div>
+                        
+                        <div id="form-error" class="form-message error-message" style="display: none;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                            <p id="error-message-text">Something went wrong. Please try again.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">MK</span>
+                    </div>
+                    <p class="footer-text">
+                        Building scalable AI solutions that solve real-world problems and deliver measurable impact.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                        <li><a href="#education" class="footer-link">Education</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/martin-koome" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="mailto:mkoome@andrew.cmu.edu" class="footer-social-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2024 Martin Koome. All rights reserved.
+                </p>
+                <p class="footer-built">
+                    Built with passion for AI & ML
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
