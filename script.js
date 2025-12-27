@@ -9,10 +9,10 @@ const projects = [
         description: 'AI-powered platform optimizing campus experience by integrating personalized learning, degree planning, information systems, and event management. Consolidates university data into a knowledge-based system using RAG.',
         problem: 'Students at CMU Africa faced fragmented access to academic and administrative services, leading to inefficiencies and reduced productivity.',
         solution: 'Designed retrieval-augmented generation pipelines using LightRAG, evaluated language models, and aligned product functionality with student needs.',
-        impact: 'Streamlined student services, reduced service access bottlenecks, currently incubated at Industry Innovation Lab.',
-        techStack: ['Python', 'FastAPI', 'RAG', 'TypeScript', 'Pinecone', 'LightRAG', 'Docker'],
+        impact: 'Streamline student services, reduce service access bottlenecks, currently incubated at Industry Innovation Lab.',
+        techStack: ['Python', 'FastAPI', 'RAG', 'TypeScript', 'Pinecone', 'LightRAG'],
         image: 'assets/images/projects/campus-link.jpg',
-        demo: 'https://www.datascienceportfol.io/koomemartin43/projects/5'
+        demo: 'https://campus-link-seven.vercel.app/'
     },
     {
         name: 'SafeSpace Africa',
@@ -22,7 +22,7 @@ const projects = [
         impact: 'Democratizing mental health access across Africa with culturally appropriate, affordable AI-powered care.',
         techStack: ['Web Development', 'Market Analysis', 'Database', 'Product Design', 'AI Triage'],
         image: 'assets/images/projects/safespace-africa.jpg',
-        demo: 'https://www.datascienceportfol.io/koomemartin43/projects/7'
+        demo: 'https://github.com/KoomeMartin/RegenAI'
     },
     {
         name: 'Kumva AI',
@@ -32,7 +32,7 @@ const projects = [
         impact: 'Making education more accessible for Rwandan students by removing language barriers in early learning.',
         techStack: ['AI Engineering', 'Speech-to-Speech', 'Web Development', 'API Integration', 'NLP'],
         image: 'assets/images/projects/kumva-ai.jpg',
-        demo: 'https://www.datascienceportfol.io/koomemartin43/projects/6'
+        demo: 'https://kumva-front.andasy.dev/'
     },
     {
         name: 'Survival Analysis in Education',
@@ -42,7 +42,7 @@ const projects = [
         impact: 'Identified significant dropout predictors and delivered actionable recommendations to university management, projected to reduce dropout rates by 15-20%.',
         techStack: ['Python (lifelines, pandas)', 'R (survival package)', 'Statistical Modeling', 'Data Analysis', 'Policy Research'],
         image: 'assets/images/projects/survival-analysis.jpg',
-        demo: 'https://www.datascienceportfol.io/koomemartin43/projects/4'
+        demo: 'https://github.com/KoomeMartin/Survival-Analysis-in-Education-'
     },
     {
         name: 'Mathlearn Chatbot',
@@ -52,17 +52,17 @@ const projects = [
         impact: 'Democratizing access to personalized math tutoring with AI-powered step-by-step problem solving.',
         techStack: ['LLM Fine-tuning', 'Transformers', 'Streamlit', 'Data Engineering', 'Quantization', 'Python'],
         image: 'assets/images/projects/mathlearn-chatbot.jpg',
-        demo: 'https://www.datascienceportfol.io/koomemartin43/projects/0'
+        demo: 'https://github.com/KoomeMartin/Mathlearn-Chatbot'
     },
     {
         name: 'Zindi Competitions',
         description: 'Active participation in Africa\'s largest data science community with 45+ challenges completed in classification, regression, computer vision, LLM fine-tuning, and data collection.',
         problem: 'Real-world ML challenges from African organizations requiring innovative solutions across diverse problem domains.',
-        solution: 'Applied advanced ML techniques, optimal cross-validation strategies, hyperparameter optimization, and ensemble methods.',
+        solution: 'Apply advanced ML techniques, optimal cross-validation strategies, hyperparameter optimization, and ensemble methods.',
         impact: 'Achieved 7th rank in Kenya, 60th globally. Built practical ML skills solving diverse real-world African data challenges.',
         techStack: ['Machine Learning', 'Deep Learning', 'Computer Vision', 'LLM Fine-tuning', 'Hyperparameter Tuning', 'CV Strategies'],
         image: 'assets/images/projects/zindi.jpg',
-        demo: 'https://www.datascienceportfol.io/koomemartin43/projects/2'
+        demo: 'https://zindi.africa/users/Koome/competitions/portfolio'
     },
     {
         name: 'TELEMED App',
@@ -82,7 +82,7 @@ const projects = [
         impact: 'Enhanced professional productivity skills and client communication capabilities for remote work excellence.',
         techStack: ['Google Workspace', 'Communication', 'Troubleshooting', 'Organization', 'Professional Support'],
         image: 'assets/images/projects/virtual-assistant.jpg',
-        demo: 'https://www.datascienceportfol.io/koomemartin43/projects/3'
+        demo: 'https://www.virtualbadge.io/certificate-validator?credential=cer-57b8b2bb-7448-405f-8fd7-fc7734a0'
     }
 ];
 
