@@ -390,15 +390,15 @@ function initContactForm() {
             // EmailJS Integration
             // Replace these with your actual EmailJS credentials
             // Get them from https://www.emailjs.com/
-            const serviceID = 'YOUR_SERVICE_ID';
-            const templateID = 'YOUR_TEMPLATE_ID';
-            const publicKey = 'YOUR_PUBLIC_KEY';
+            const serviceID = 'service_2bq3wlp';
+            const templateID = 'template_6gah2ob';
+            const publicKey = 'Ey4Xqpzc26zY4cX1t';
             
             // For now, simulate success (you'll replace this with actual EmailJS call)
             await new Promise(resolve => setTimeout(resolve, 1500));
             
             // Uncomment and configure when you have EmailJS credentials:
-            /*
+            
             const response = await emailjs.send(serviceID, templateID, {
                 from_name: formData.name,
                 from_email: formData.email,
@@ -406,7 +406,7 @@ function initContactForm() {
                 message: formData.message,
                 to_email: 'mkoome@andrew.cmu.edu'
             }, publicKey);
-            */
+            
             
             // Show success message
             successMessage.style.display = 'flex';
