@@ -56,7 +56,7 @@ const projects = [
     },
     {
         name: 'Zindi Competitions',
-        description: 'Active participation in Africa\'s largest data science community with 45+ challenges completed in classification, regression, computer vision, LLM fine-tuning, and data collection.',
+        description: 'Active participation in Africa\'s largest data science community with 70+ challenges completed in classification, regression, computer vision, LLM fine-tuning, and data collection.',
         problem: 'Real-world ML challenges from African organizations requiring innovative solutions across diverse problem domains.',
         solution: 'Apply advanced ML techniques, optimal cross-validation strategies, hyperparameter optimization, and ensemble methods.',
         impact: 'Achieved 7th rank in Kenya, 60th globally. Built practical ML skills solving diverse real-world African data challenges.',
