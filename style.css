@@ -780,6 +780,80 @@ body {
     transform: translateZ(0);
 }
 
+/* Profile Leadership Badge */
+.profile-badge {
+    position: absolute;
+    bottom: -15px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, 
+        rgba(59, 130, 246, 0.95) 0%, 
+        rgba(147, 51, 234, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-full);
+    border: 2px solid var(--color-border-hover);
+    box-shadow: var(--shadow-lg), 0 0 30px rgba(59, 130, 246, 0.4);
+    animation: float-badge 3s ease-in-out infinite;
+    z-index: 10;
+    transition: all var(--transition-normal);
+}
+
+.profile-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl), 0 0 40px rgba(59, 130, 246, 0.5);
+}
+
+@keyframes float-badge {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
+    color: white;
+}
+
+.badge-icon svg {
+    width: 16px;
+    height: 16px;
+    stroke: white;
+}
+
+.badge-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.badge-role {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.badge-org {
+    font-size: var(--font-size-xs);
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    line-height: 1.2;
+}
+
 
 /* Placeholder for profile image */
 .profile-placeholder {
