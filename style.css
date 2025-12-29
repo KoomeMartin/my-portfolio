@@ -793,7 +793,7 @@ body {
     backdrop-filter: blur(8px);
     padding: 1rem 1.5rem;
     border-radius: var(--radius-xl);
-    margin-top: 1.5rem;
+    margin-top: 0.75rem;
     box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
     transition: all var(--transition-normal);
 }
@@ -804,7 +804,6 @@ body {
         rgba(147, 51, 234, 0.12) 100%);
     border-color: rgba(59, 130, 246, 0.5);
     box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
-    transform: translateY(-3px);
 }
 
 .badge-icon {
