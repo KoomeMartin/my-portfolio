@@ -62,7 +62,7 @@ const projects = [
         impact: 'Achieved 7th rank in Kenya, 60th globally. Built practical ML skills solving diverse real-world African data challenges.',
         techStack: ['Machine Learning', 'Deep Learning', 'Computer Vision', 'LLM Fine-tuning', 'Hyperparameter Tuning', 'CV Strategies'],
         image: 'assets/images/projects/zindi.jpg',
-        demo: 'https://zindi.africa/users/Koome/competitions/portfolio'
+        demo: 'https://zindi.africa/users/Koome'
     },
     {
         name: 'TELEMED App',
