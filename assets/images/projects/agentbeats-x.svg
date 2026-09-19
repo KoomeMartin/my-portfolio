@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="AgentBeats X-Detector adversarial AI security">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b18"/>
+      <stop offset="0.5" stop-color="#111634"/>
+      <stop offset="1" stop-color="#1c1340"/>
+    </linearGradient>
+    <radialGradient id="gRed" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f87171" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f87171" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4f83ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#4f83ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gShield" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#c9a875" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#c9a875" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <circle cx="230" cy="300" r="280" fill="url(#gRed)"/>
+  <circle cx="980" cy="360" r="280" fill="url(#gBlue)"/>
+
+  <!-- title chip -->
+  <g transform="translate(70,58)">
+    <rect width="300" height="46" rx="23" fill="#ffffff" fill-opacity="0.08" stroke="#c9a875" stroke-opacity="0.5"/>
+    <circle cx="30" cy="23" r="8" fill="#f87171"/>
+    <text x="52" y="31" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2" fill="#e6ebff">X-DETECTOR</text>
+  </g>
+
+  <!-- attacker nodes (left, red) -->
+  <g stroke="#f87171" stroke-width="3" opacity="0.55">
+    <line x1="150" y1="250" x2="600" y2="337"/>
+    <line x1="200" y1="430" x2="600" y2="337"/>
+    <line x1="120" y1="360" x2="600" y2="337"/>
+  </g>
+  <g fill="#f87171">
+    <circle cx="150" cy="250" r="18"/><circle cx="150" cy="250" r="32" opacity="0.3" filter="url(#soft)"/>
+    <circle cx="200" cy="430" r="14"/>
+    <circle cx="120" cy="360" r="12"/>
+  </g>
+  <text x="120" y="205" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#fca5a5">ATTACKER</text>
+
+  <!-- defender nodes (right, blue) -->
+  <g stroke="#4f83ff" stroke-width="3" opacity="0.55">
+    <line x1="1050" y1="250" x2="600" y2="337"/>
+    <line x1="1000" y1="440" x2="600" y2="337"/>
+    <line x1="1080" y1="360" x2="600" y2="337"/>
+  </g>
+  <g fill="#4f83ff">
+    <circle cx="1050" cy="250" r="18"/><circle cx="1050" cy="250" r="32" opacity="0.3" filter="url(#soft)"/>
+    <circle cx="1000" cy="440" r="14"/>
+    <circle cx="1080" cy="360" r="12"/>
+  </g>
+  <text x="990" y="205" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#93b4ff">DEFENDER</text>
+
+  <!-- central shield with lock -->
+  <circle cx="600" cy="337" r="150" fill="url(#gShield)"/>
+  <g transform="translate(600,337)">
+    <path d="M0 -140 L120 -92 L120 30 C120 120 0 165 0 165 C0 165 -120 120 -120 30 L-120 -92 Z"
+          fill="#0d1230" fill-opacity="0.85" stroke="#c9a875" stroke-width="6" stroke-linejoin="round"/>
+    <g stroke="#e6ebff" stroke-width="7" fill="none" stroke-linecap="round">
+      <path d="M-34 -8 a34 34 0 0 1 68 0 v18 h-68 Z" fill="#e6ebff" fill-opacity="0.12"/>
+      <rect x="-42" y="10" width="84" height="66" rx="12" fill="#e6ebff" fill-opacity="0.12"/>
+      <circle cx="0" cy="40" r="8" fill="#c9a875" stroke="none"/>
+      <line x1="0" y1="40" x2="0" y2="58"/>
+    </g>
+  </g>
+
+  <!-- terminal panel -->
+  <g transform="translate(430,540)">
+    <rect width="340" height="96" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+    <circle cx="24" cy="24" r="6" fill="#f87171"/><circle cx="46" cy="24" r="6" fill="#f59e0b"/><circle cx="68" cy="24" r="6" fill="#34d399"/>
+    <rect x="24" y="44" width="200" height="8" rx="4" fill="#93b4ff" opacity="0.7"/>
+    <rect x="24" y="62" width="150" height="8" rx="4" fill="#ffffff" opacity="0.25"/>
+    <g transform="translate(232,50)">
+      <rect width="86" height="30" rx="8" fill="#34d399" fill-opacity="0.9"/>
+      <text x="43" y="20" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#052014" text-anchor="middle">BLOCKED</text>
+    </g>
+  </g>
+</svg>

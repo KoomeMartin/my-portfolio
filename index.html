@@ -30,7 +30,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -76,6 +76,7 @@
         
         <div class="hero-content">
             <div class="hero-text">
+                <span class="hero-eyebrow animate-fade-in">M.S. Engineering AI Graduate Student &middot; Carnegie Mellon University Africa</span>
                 <h1 class="hero-name">
                     <span class="name-text gradient-text animate-fade-in">Martin Koome</span>
                 </h1>
@@ -119,7 +120,7 @@
                             <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
                     </a>
-                    <a href="assets/Martin_Koome_CV.pdf" download class="btn btn-secondary">
+                    <a href="assets/Martin_Koome_Cirriculum_Vitae.pdf" download class="btn btn-secondary">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <polyline points="7 10 12 15 17 10"></polyline>
@@ -134,6 +135,12 @@
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
                     </a>
+                </div>
+            </div>
+
+            <div class="hero-photo animate-fade-in-delay-2">
+                <div class="hero-photo-frame">
+                    <img src="assets/images/profile.webp" alt="Martin Koome" class="hero-photo-img">
                 </div>
             </div>
         </div>
@@ -276,83 +283,141 @@
             </div>
             
             <div class="skills-grid">
-                <!-- Machine Learning -->
+                <!-- Machine Learning & Deep Learning -->
                 <div class="skill-category card-hover">
-                    <div class="skill-icon" style="background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);">
+                    <div class="skill-icon" style="background: #b28a56;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 2a9 9 0 0 0-9 9v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a9 9 0 0 1 14 0h-3a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a9 9 0 0 0-9-9z"></path>
                         </svg>
                     </div>
-                    <h3 class="skill-title">Machine Learning</h3>
+                    <h3 class="skill-title">Machine Learning & Deep Learning</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Transformers</span>
-                        <span class="skill-tag">Probabilistic Graphical Models</span>
                         <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">RAG Systems</span>
-                        <span class="skill-tag">LLM Fine-tuning</span>
+                        <span class="skill-tag">Probabilistic Graphical Models</span>
+                        <span class="skill-tag">Transformers</span>
                         <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Model Optimization</span>
                     </div>
                 </div>
                 
-                <!-- Programming -->
+                <!-- Generative AI & LLMs -->
                 <div class="skill-category card-hover">
-                    <div class="skill-icon" style="background: linear-gradient(135deg, #9333ea 0%, #ec4899 100%);">
+                    <div class="skill-icon" style="background: #b28a56;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                         </svg>
                     </div>
-                    <h3 class="skill-title">Programming</h3>
+                    <h3 class="skill-title">Generative AI & LLMs</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">LLM Fine-tuning</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Speech & TTS</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Quantization</span>
                     </div>
                 </div>
                 
-                <!-- Data Science -->
+                <!-- AI Safety & Agentic Systems -->
                 <div class="skill-category card-hover">
-                    <div class="skill-icon" style="background: linear-gradient(135deg, #14b8a6 0%, #10b981 100%);">
+                    <div class="skill-icon" style="background: #b28a56;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">AI Safety & Agentic Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">Prompt Injection Defense</span>
+                        <span class="skill-tag">Jailbreak Resistance</span>
+                        <span class="skill-tag">Red-teaming</span>
+                        <span class="skill-tag">Information Leakage Prevention</span>
+                        <span class="skill-tag">Trustworthy AI</span>
+                    </div>
+                </div>
+                
+                <!-- Data Science & Statistics -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: #b28a56;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
                             <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
                             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                         </svg>
                     </div>
-                    <h3 class="skill-title">Data Science</h3>
+                    <h3 class="skill-title">Data Science & Statistics</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">pandas</span>
                         <span class="skill-tag">scikit-learn</span>
-                        <span class="skill-tag">lifelines</span>
                         <span class="skill-tag">Survival Analysis</span>
                         <span class="skill-tag">Statistical Modeling</span>
                         <span class="skill-tag">Time Series Analysis</span>
+                        <span class="skill-tag">Data Engineering</span>
+                    </div>
+                </div>
+                
+                <!-- Signal Processing & Sensing -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: #b28a56;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Signal Processing & Sensing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Wi-Fi CSI Sensing</span>
+                        <span class="skill-tag">Biomedical Signals</span>
+                        <span class="skill-tag">Feature Extraction</span>
+                        <span class="skill-tag">Frequency Analysis</span>
+                        <span class="skill-tag">Noise Filtering</span>
+                        <span class="skill-tag">Sensor Data</span>
+                    </div>
+                </div>
+                
+                <!-- Programming & Engineering -->
+                <div class="skill-category card-hover">
+                    <div class="skill-icon" style="background: #b28a56;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Programming & Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Git</span>
                     </div>
                 </div>
                 
                 <!-- MLOps & Cloud -->
                 <div class="skill-category card-hover">
-                    <div class="skill-icon" style="background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);">
+                    <div class="skill-icon" style="background: #b28a56;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                         </svg>
                     </div>
-                    <h3 class="skill-title">MLOps & Cloud</h3>
+                    <h3 class="skill-title">MLOps, Cloud & Observability</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Cloud Deployment</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Istio</span>
                         <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Portainer</span>
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Loki</span>
+                        <span class="skill-tag">Cloud Deployment</span>
+                        <span class="skill-tag">Model Monitoring</span>
                     </div>
                 </div>
                 
                 <!-- Research Tools -->
                 <div class="skill-category card-hover">
-                    <div class="skill-icon" style="background: linear-gradient(135deg, #6366f1 0%, #9333ea 100%);">
+                    <div class="skill-icon" style="background: #b28a56;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
                             <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
@@ -360,28 +425,28 @@
                     </div>
                     <h3 class="skill-title">Research Tools</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">VOSviewer</span>
-                        <span class="skill-tag">Zotero</span>
-                        <span class="skill-tag">Notion</span>
                         <span class="skill-tag">LaTeX + Overleaf</span>
+                        <span class="skill-tag">Zotero</span>
+                        <span class="skill-tag">VOSviewer</span>
                         <span class="skill-tag">Connected Papers</span>
+                        <span class="skill-tag">Notion</span>
                     </div>
                 </div>
                 
                 <!-- Tools & Platforms -->
                 <div class="skill-category card-hover">
-                    <div class="skill-icon" style="background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);">
+                    <div class="skill-icon" style="background: #b28a56;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                         </svg>
                     </div>
                     <h3 class="skill-title">Tools & Platforms</h3>
                     <div class="skill-tags">
+                        <span class="skill-tag">USSD & AI Voice</span>
+                        <span class="skill-tag">Streamlit</span>
                         <span class="skill-tag">n8n Automation</span>
                         <span class="skill-tag">ERPNext</span>
-                        <span class="skill-tag">NPM</span>
                         <span class="skill-tag">Google Workspace</span>
-                        <span class="skill-tag">Market Research</span>
                         <span class="skill-tag">Product Design</span>
                     </div>
                 </div>

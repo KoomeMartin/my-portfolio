@@ -5,6 +5,55 @@
 // ========== PROJECTS DATA ==========
 const projects = [
     {
+        category: 'Wi-Fi Sensing & Deep Learning',
+        name: 'Contactless Neonatal Monitoring',
+        description: 'A contactless neonatal vital-sign monitoring system using Wi-Fi Channel State Information (CSI) and deep learning, built for resource-constrained neonatal care in Sub-Saharan Africa.',
+        problem: 'Neonatal units in low-resource settings lack continuous, affordable monitoring, delaying detection of deterioration and contributing to preventable mortality.',
+        solution: 'Adapted an existing CSI-based heart-rate pipeline (originally built for adults) to neonates by modeling their higher and distinct physiological frequency ranges, enabling non-invasive vital-sign estimation from ambient Wi-Fi.',
+        impact: 'A low-cost, scalable, contactless monitoring approach that supports earlier detection of neonatal deterioration where conventional monitors are scarce.',
+        techStack: ['Wi-Fi CSI', 'Deep Learning', 'Signal Processing', 'PyTorch', 'Python', 'Biomedical AI'],
+        image: 'assets/images/projects/contactless-neonatal.png',
+        certificate: 'assets/certificates/Martin_Koome_Vitalabs_Certificate.pdf'
+    },
+    {
+        category: 'AI for Agriculture & Fintech',
+        name: 'Umuhinzi Trust',
+        award: '🥇 1st Place — Umuhinzi Digital Hackathon',
+        description: 'A Kinyarwanda-language USSD and AI voice platform for feature phones that turns everyday farming activity into verifiable digital records, moving Rwanda\'s smallholder farmers "from invisible to investable".',
+        problem: 'Smallholder farmers lack verifiable financial histories, so lenders demand extreme collateral and farmers remain excluded from credit and markets.',
+        solution: 'Built a USSD + AI voice platform where farmers log harvests, quantities, and sales; UPI-linked market listings convert this activity into alternative credit histories lenders can assess with real data.',
+        impact: 'Won 1st place at the Umuhinzi Digital Hackathon for advancing financial inclusion and market transparency through digital agriculture.',
+        techStack: ['USSD', 'AI Voice', 'Kinyarwanda NLP', 'Fintech', 'Credit Scoring'],
+        image: 'assets/images/projects/umuhinzi-trust.png',
+        featured: 'https://www.africa.engineering.cmu.edu/news/2026/09/04-umuhinzi-hackathon.html'
+    },
+    {
+        category: 'Healthcare AI & NLP',
+        name: 'Sauti Yetu',
+        award: '🥈 2nd Place — Intron Hackathon',
+        description: 'A Swahili-English code-switched healthcare triage assistant that bridges language barriers for clinical front-desk officers serving immigrant and refugee patients.',
+        problem: 'Front-desk clinical staff struggle to triage patients who speak Swahili-English code-switched language, risking miscommunication and delayed care.',
+        solution: 'Builds a visual clinical reasoning graph, classifies complaints, assigns urgency, escalates red-flag cases, routes patients, auto-fills intake forms, suggests clarifying questions, and uses TTS to communicate in the patient\'s local language.',
+        impact: 'Placed 2nd and was featured by Intron; streamlines multilingual clinical intake and improves access for underserved patients.',
+        techStack: ['NLP', 'Code-switching', 'Clinical Triage', 'TTS', 'LLMs'],
+        image: 'assets/images/projects/sauti-yetu.svg',
+        demo: 'https://www.youtube.com/watch?v=56YiiNJNT5M',
+        featured: 'https://www.intron.io/'
+    },
+    {
+        category: 'Adversarial AI & Security',
+        name: 'AgentBeats — X-Detector',
+        award: '🏆 Top 3 — Lambda AgentBeats',
+        description: 'Attacker and defender agents built for adversarial security scenarios in the Berkeley RDI AgentX–AgentBeats competition, focused on probing and hardening agentic AI systems.',
+        problem: 'As agentic AI systems grow more capable, they become vulnerable to prompt injection, jailbreaks, and information leakage — accuracy alone is not enough.',
+        solution: 'Designed adversarial attacker and defender agents with prompt-injection defenses, jailbreak resistance, and information-leakage prevention, iterating through extensive red-teaming and edge-case testing.',
+        impact: 'Team X-Detector placed among the Top 3 in the Lambda AgentBeats Competition; the attacker agent excelled on a private set of entirely unseen scenarios.',
+        techStack: ['Agentic AI', 'Prompt Injection', 'LLM Security', 'Red-teaming', 'Python'],
+        image: 'assets/images/projects/agentbeats-x.svg',
+        github: 'https://github.com/w4lk3r04/Agentbeats-X-Agent'
+    },
+    {
+        category: 'AI & Retrieval Systems',
         name: 'Campus Link',
         description: 'AI-powered platform optimizing campus experience by integrating personalized learning, degree planning, information systems, and event management. Consolidates university data into a knowledge-based system using RAG.',
         problem: 'Students at CMU Africa faced fragmented access to academic and administrative services, leading to inefficiencies and reduced productivity.',
@@ -15,6 +64,7 @@ const projects = [
         demo: 'https://campus-link-seven.vercel.app/'
     },
     {
+        category: 'AI for Social Impact',
         name: 'SafeSpace Africa',
         description: 'AI-powered mental wellness platform providing accessible, affordable care in local languages through AI-guided triage, education, group sessions, and therapist support.',
         problem: 'Mental health services in Africa are scarce, expensive, and often not culturally adapted or available in local languages.',
@@ -25,6 +75,7 @@ const projects = [
         demo: 'https://github.com/KoomeMartin/RegenAI'
     },
     {
+        category: 'NLP & Speech AI',
         name: 'Kumva AI',
         description: 'Voice-based Kinyarwanda-English learning assistant for early-grade students. Bridges language gaps by teaching concepts naturally in Kinyarwanda while guiding learners into English.',
         problem: 'Early-grade students in Rwanda struggle with English-only instruction, creating learning barriers and limiting educational outcomes.',
@@ -35,6 +86,7 @@ const projects = [
         demo: 'https://kumva-front.andasy.dev/'
     },
     {
+        category: 'Data Science & Research',
         name: 'Survival Analysis in Education',
         description: 'Data-driven research project applying time-dependent survival analysis to examine student dropout patterns in STEM programs at Multimedia University of Kenya.',
         problem: 'High dropout rates in STEM programs at Multimedia University with limited understanding of risk periods and contributing factors.',
@@ -45,6 +97,7 @@ const projects = [
         demo: 'https://github.com/KoomeMartin/Survival-Analysis-in-Education-'
     },
     {
+        category: 'LLM Fine-tuning',
         name: 'Mathlearn Chatbot',
         description: 'Fine-tuned Gemma2 9b model with custom chain-of-thought data to solve mathematics problems step-by-step. Interactive Streamlit interface for easy model access.',
         problem: 'Students need personalized, step-by-step math tutoring that adapts to their learning pace and explains reasoning clearly.',
@@ -55,6 +108,7 @@ const projects = [
         demo: 'https://github.com/KoomeMartin/Mathlearn-Chatbot'
     },
     {
+        category: 'Machine Learning',
         name: 'Zindi Competitions',
         description: 'Active participation in Africa\'s largest data science community with 70+ challenges completed in classification, regression, computer vision, LLM fine-tuning, and data collection.',
         problem: 'Real-world ML challenges from African organizations requiring innovative solutions across diverse problem domains.',
@@ -65,6 +119,7 @@ const projects = [
         demo: 'https://zindi.africa/users/Koome'
     },
     {
+        category: 'HealthTech & IoT',
         name: 'TELEMED App',
         description: 'Innovative solution for hypertension patients in marginalized areas to monitor vitals in real-time through smartwatch and mobile app with AI-powered emergency alerts.',
         problem: 'Hypertension patients in marginalized areas lack access to continuous monitoring and timely emergency response.',
@@ -75,6 +130,7 @@ const projects = [
         demo: 'https://www.datascienceportfol.io/koomemartin43/projects/1'
     },
     {
+        category: 'Professional Development',
         name: 'Virtual Assistant Certification',
         description: 'Completed 15-week hands-on ALX program focused on communication, troubleshooting, organization, and productivity. Gained professional skills in Google Workspace and client support.',
         problem: 'Need for comprehensive training in professional virtual assistant skills for modern remote work environments.',
@@ -255,7 +311,7 @@ function initParticles() {
         particle.style.position = 'absolute';
         particle.style.width = Math.random() * 3 + 1 + 'px';
         particle.style.height = particle.style.width;
-        particle.style.background = 'rgba(59, 130, 246, 0.4)';
+        particle.style.background = 'rgba(178, 138, 86, 0.28)';
         particle.style.borderRadius = '50%';
         particle.style.left = Math.random() * 100 + '%';
         particle.style.top = Math.random() * 100 + '%';
@@ -285,16 +341,30 @@ function initParticles() {
 }
 
 // ========== RENDER PROJECTS ==========
+function getInitials(name) {
+    return name
+        .replace(/[^a-zA-Z0-9 ]/g, ' ')
+        .split(/\s+/)
+        .filter(Boolean)
+        .slice(0, 2)
+        .map(word => word[0].toUpperCase())
+        .join('');
+}
+
 function renderProjects() {
     const projectsGrid = document.getElementById('projects-grid');
     if (!projectsGrid) return;
     
     projectsGrid.innerHTML = projects.map(project => `
         <div class="project-card card-hover">
-            <div class="project-image">
-                <img src="${project.image}" alt="${project.name}" loading="lazy">
+            <div class="project-image${project.image ? '' : ' project-image-placeholder'}">
+                ${project.image
+                    ? `<img src="${project.image}" alt="${project.name}" loading="lazy">`
+                    : `<span class="project-monogram">${getInitials(project.name)}</span>`}
             </div>
             <div class="project-content">
+                ${project.award ? `<span class="project-award">${project.award}</span>` : ''}
+                ${project.category ? `<span class="project-category">${project.category}</span>` : ''}
                 <h3 class="project-name">${project.name}</h3>
                 <p class="project-description">${project.description}</p>
                 
@@ -335,6 +405,25 @@ function renderProjects() {
                                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                 <polyline points="15 3 21 3 21 9"></polyline>
                                 <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    ` : ''}
+                    ${project.featured ? `
+                        <a href="${project.featured}" target="_blank" rel="noopener noreferrer" class="project-btn ${project.demo ? 'project-btn-secondary' : 'project-btn-primary'}">
+                            Featured
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    ` : ''}
+                    ${project.certificate ? `
+                        <a href="${project.certificate}" target="_blank" rel="noopener noreferrer" class="project-btn ${project.demo ? 'project-btn-secondary' : 'project-btn-primary'}">
+                            Certificate
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                                <path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"></path>
                             </svg>
                         </a>
                     ` : ''}
